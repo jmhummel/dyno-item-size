@@ -64,6 +64,12 @@ describe('should calculate value sizes', function() {
       assert.equal(sizeOfValue(number), expectedSize);
     });
     
+    it('11110000', function() {
+      let number = 11110000;
+      let expectedSize = 3;
+      assert.equal(sizeOfValue(number), expectedSize);
+    });
+    
     it('1000.000', function() {
       let number = 1000.000;
       let expectedSize = 2;
